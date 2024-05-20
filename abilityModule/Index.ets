@@ -1,0 +1,1 @@
+export { Index as SubAbilityPage } from './src/main/ets/pages/Index'

@@ -1,0 +1,78 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/beantechs/.ohos/config/default_DependsDemo_SHj-TIoY-s2DPDNsc63CWDvgvxHNXWzW4_XL448qE1k=.cer",
+          "storePassword": "0000001BD3FEB722A98EF2D5CFF24AD725426E77DDDEB4BE530C829735AA4B29C273B8493442767A9E040B",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BC0A96C75DDB3C92174249D0DBE99751B2EBEF6951C7769B20FF54820FEC7F8B850EDDA85F4FD2F",
+          "profile": "/Users/beantechs/.ohos/config/default_DependsDemo_SHj-TIoY-s2DPDNsc63CWDvgvxHNXWzW4_XL448qE1k=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/beantechs/.ohos/config/default_DependsDemo_SHj-TIoY-s2DPDNsc63CWDvgvxHNXWzW4_XL448qE1k=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "4.1.0(11)",
+        "compatibleSdkVersion": "4.1.0(11)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SharelibraryModule",
+      "srcPath": "./SharelibraryModule",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "staticlibraryModule",
+      "srcPath": "./staticlibraryModule"
+    },
+    {
+      "name": "abilityModule",
+      "srcPath": "./abilityModule",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

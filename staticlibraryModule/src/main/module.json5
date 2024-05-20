@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "staticlibraryModule",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}
